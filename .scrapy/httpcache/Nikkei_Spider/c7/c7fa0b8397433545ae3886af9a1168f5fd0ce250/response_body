@@ -1,0 +1,4 @@
+
+User-agent: *
+Allow: /.tools/www-redirect
+Disallow: /.tools
