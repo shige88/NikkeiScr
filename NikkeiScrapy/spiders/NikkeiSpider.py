@@ -27,7 +27,7 @@ class NikkeiSpider(scrapy.Spider):
             # item['detail'] = self.rmblank(item['detail'])
             # print(item['title'])
 
-            item['insert_datetime'] = datetime.today()
+            item['insert_datetime'] = datetime.datetime.today()
             yield item
 
         # next_page = response.css('button.nui-button search__more-button')
