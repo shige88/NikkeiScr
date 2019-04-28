@@ -1,7 +1,7 @@
 import scrapy
 import configparser
 from NikkeiScrapy.items import NikkeiItem
-
+import datetime
 
 class NikkeiSpider(scrapy.Spider):
     # Your spider definition
@@ -20,12 +20,14 @@ class NikkeiSpider(scrapy.Spider):
         # for article in response.css('div.stream-layout__card search__result-item-content nui-layout__item nui-card--no-image'):
         for article in response.css('div.nui-card__container'):
             item = NikkeiItem()
-            item['title'] = map(self.rmblank(), article.css('h3.nui-card__title a::text').extract())
+            item['title'] = article.css('h3.nui-card__title a::text').extract()
             # item['title'] = map(lambda str:str.strip(), item['title'])
 
             item['detail'] = article.css('div.nui-card__sub-text a::text').extract()
             # item['detail'] = self.rmblank(item['detail'])
             # print(item['title'])
+
+            item['insert_datetime'] = datetime.today()
             yield item
 
         # next_page = response.css('button.nui-button search__more-button')
@@ -34,7 +36,6 @@ class NikkeiSpider(scrapy.Spider):
             url = response.urljoin(next_page[0].extract())
             yield scrapy.Request(url, callback=self.parse)
 
-        print item['title']
         # else:
         #     return
         # pass
