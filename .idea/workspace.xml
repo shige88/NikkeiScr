@@ -4,7 +4,9 @@
     <list default="true" id="7b40a0c0-aeab-43f6-9cf3-feb9b1eca419" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NikkeiScrapy/NikkeiOutput.csv" beforeDir="false" afterPath="$PROJECT_DIR$/NikkeiScrapy/NikkeiOutput.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NikkeiScrapy/spiders/nikkei.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/NikkeiScrapy/PyConfig.ini" beforeDir="false" afterPath="$PROJECT_DIR$/NikkeiScrapy/PyConfig.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NikkeiScrapy/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/NikkeiScrapy/items.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NikkeiScrapy/spiders/NikkeiSpider.py" beforeDir="false" afterPath="$PROJECT_DIR$/NikkeiScrapy/spiders/NikkeiSpider.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,11 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/NikkeiScrapy/spiders/NikkeiSpider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+            <state relative-caret-position="255">
+              <caret line="15" column="42" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -27,10 +29,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/NikkeiScrapy/PyConfig.ini">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/NikkeiScrapy/items.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
-              <caret line="14" column="8" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+              <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -47,19 +67,15 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/NikkeiScrapy/NikkeiOutput.csv">
-          <provider selected="true" editor-type-id="csv-text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
-            </state>
-          </provider>
           <provider editor-type-id="csv-table-editor">
             <state showInfoPanel="true" fixedHeaders="false" rowLines="3">
               <column index="0" width="100" />
               <column index="1" width="100" />
             </state>
           </provider>
+          <provider selected="true" editor-type-id="csv-text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -75,7 +91,7 @@
         <entry file="file://$PROJECT_DIR$/NikkeiScrapy/spiders/test.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -127,11 +143,12 @@
       <list>
         <option value="$PROJECT_DIR$/NikkeiScrapy/NikkeiScrapy.py" />
         <option value="$PROJECT_DIR$/NikkeiScrapy/NikkeiScraping.py" />
-        <option value="$PROJECT_DIR$/NikkeiScrapy/PyConfig.ini" />
         <option value="$PROJECT_DIR$/NikkeiScraping.py" />
         <option value="$PROJECT_DIR$/NikkeiScrapy/spiders/test.py" />
-        <option value="$PROJECT_DIR$/NikkeiScrapy/items.py" />
         <option value="$PROJECT_DIR$/NikkeiScrapy/settings.py" />
+        <option value="$PROJECT_DIR$/NikkeiScrapy/NikkeiOutput.csv" />
+        <option value="$PROJECT_DIR$/NikkeiScrapy/PyConfig.ini" />
+        <option value="$PROJECT_DIR$/NikkeiScrapy/items.py" />
         <option value="$PROJECT_DIR$/NikkeiScrapy/spiders/NikkeiSpider.py" />
       </list>
     </option>
@@ -146,32 +163,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="NikkeiScrapy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NikkeiScrapy" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NikkeiScrapy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NikkeiScrapy" type="462c0819:PsiDirectoryNode" />
-              <item name="NikkeiScrapy" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NikkeiScrapy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NikkeiScrapy" type="462c0819:PsiDirectoryNode" />
-              <item name="NikkeiScrapy" type="462c0819:PsiDirectoryNode" />
-              <item name="spiders" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NikkeiScrapy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="スクラッチおよびコンソール" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope">
         <subPane subId="Scope '変更されたファイル'; set:変更されたファイル; ALL; class com.intellij.packageDependencies.ChangeListScope">
           <expand>
@@ -183,6 +174,21 @@
               <item name="NikkeiScrapy" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="~/Desktop/NikkeiScrapy" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name=".idea" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="NikkeiScrapy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NikkeiScrapy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NikkeiScrapy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="スクラッチおよびコンソール" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
             </path>
           </expand>
           <select />
@@ -373,7 +379,9 @@
       <workItem from="1556116118930" duration="7373000" />
       <workItem from="1556124336888" duration="90000" />
       <workItem from="1556378223907" duration="755000" />
-      <workItem from="1556442156561" duration="879000" />
+      <workItem from="1556442156561" duration="4525000" />
+      <workItem from="1556518319413" duration="4586000" />
+      <workItem from="1556611277676" duration="449000" />
     </task>
     <task id="LOCAL-00001" summary="初回コミット">
       <created>1556121789777</created>
@@ -410,11 +418,18 @@
       <option name="project" value="LOCAL" />
       <updated>1556442820174</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="[update]不要ファイル削除(nikkei.json)">
+      <created>1556444661721</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1556444661721</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16523000" />
+    <option name="totallyTimeSpent" value="25204000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -429,12 +444,12 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27825466" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28540772" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4985694" weight="0.32891566" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49785408" visible="true" weight="0.32891566" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49642345" visible="true" weight="0.32891566" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -442,7 +457,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.4985694" weight="0.32891566" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50214595" side_tool="true" visible="true" weight="0.32891566" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5035765" side_tool="true" visible="true" weight="0.32891566" />
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49713877" weight="0.34698796" />
       <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.49928468" weight="0.32891566" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -495,11 +510,12 @@
     <MESSAGE value=".idea更新" />
     <MESSAGE value="[update]workspace修正。settings.pyのcsv出力オプション削除。spiderシステム日付追加" />
     <MESSAGE value="[update]システム日付修正" />
-    <option name="LAST_COMMIT_MESSAGE" value="[update]システム日付修正" />
+    <MESSAGE value="[update]不要ファイル削除(nikkei.json)" />
+    <option name="LAST_COMMIT_MESSAGE" value="[update]不要ファイル削除(nikkei.json)" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/NikkeiScrapy$test.coverage" NAME="test Coverage Results" MODIFIED="1556119203320" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/NikkeiScrapy/spiders" />
-    <SUITE FILE_PATH="coverage/NikkeiScrapy$NikkeiScrapy.coverage" NAME="NikkeiScrapy Coverage Results" MODIFIED="1556442824422" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/NikkeiScrapy" />
+    <SUITE FILE_PATH="coverage/NikkeiScrapy$NikkeiScrapy.coverage" NAME="NikkeiScrapy Coverage Results" MODIFIED="1556611363475" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/NikkeiScrapy" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
@@ -509,15 +525,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/export.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
-      <provider editor-type-id="text-editor" />
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3">
-          <column index="0" width="100" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/export.csv" />
     <entry file="file://$PROJECT_DIR$/NikkeiScrapy/middlewares.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="449">
@@ -528,9 +536,6 @@
     <entry file="file://$PROJECT_DIR$/NikkeiScrapy/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/scrapy.cfg">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -538,17 +543,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NikkeiScrapy/PyConfig.ini">
+    <entry file="file://$PROJECT_DIR$/NikkeiScrapy/spiders/nikkei.json" />
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="48" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="48" />
+        <state relative-caret-position="17">
+          <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NikkeiScrapy/items.py">
+    <entry file="file://$PROJECT_DIR$/NikkeiScrapy/spiders/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="8" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NikkeiScrapy/spiders/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NikkeiScrapy/pipelines.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NikkeiScrapy/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="54" selection-start-line="18" selection-start-column="54" selection-end-line="18" selection-end-column="54" />
         </state>
       </provider>
     </entry>
@@ -562,53 +585,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NikkeiScrapy/spiders/NikkeiSpider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NikkeiScrapy/pipelines.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NikkeiScrapy/spiders/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NikkeiScrapy/spiders/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NikkeiScrapy/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="54" selection-start-line="18" selection-start-column="54" selection-end-line="18" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NikkeiScrapy/spiders/nikkei.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/NikkeiScrapy/NikkeiOutput.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
-        </state>
-      </provider>
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3">
           <column index="0" width="100" />
           <column index="1" width="100" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NikkeiScrapy/PyConfig.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NikkeiScrapy/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NikkeiScrapy/spiders/NikkeiSpider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="42" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

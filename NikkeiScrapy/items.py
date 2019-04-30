@@ -9,7 +9,7 @@ import scrapy
 
 
 class NikkeiItem(scrapy.Item):
-    title = scrapy.Field()
-    detail = scrapy.Field()
-    insert_datetime = scrapy.Field()
+    I1_title = scrapy.Field()
+    I2_detail = scrapy.Field()
+    I3_insert_datetime = scrapy.Field()
     pass
