@@ -22,18 +22,14 @@
 
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
-# import chromedriver_binary
 import time
 import configparser
-# from selenium.webdriver.common.keys import Keys
 from bs4 import BeautifulSoup
 from tkinter import messagebox
 import pandas as pd
+import datetime
 
 #グローバル変数
-# config = None
-# driver = None
-# df = None
 str_id = ""
 str_pass = ""
 el_login_id = ""
@@ -41,21 +37,15 @@ el_login_pass = ""
 el_login_btn = ""
 el_search_txtbox = ""
 
-df = pd.DataFrame( columns=['記事タイトル','内容'] )
+df = pd.DataFrame( columns=['記事タイトル','内容' ,'更新日時'] )
 config = configparser.ConfigParser()
-config.read('PyConfig.ini')
+config.read('./PyConfig.ini')
 # ブラウザーを起動
 options = Options()
 options.binary_location = config.get('Browser', 'ChromeLocation')
 options.add_argument('--headless')
 options.add_argument('--window-size=1280,800')
 driver = webdriver.Chrome(options=options, executable_path=config.get('Driver', 'ChromeDriverPath'))
-
-
-# driver = webdriver.Chrome(config.get('Driver', 'ChromeDriverPath'))
-
-#
-# import chromedriver_binary
 
 
 def setDefault():
@@ -66,7 +56,6 @@ def setElementId():
    el_login_pass = 'LA7010Form01:LA7010Password'
    el_login_btn = 'LA7010Form01:submitBtn'
    el_search_txtbox = 'SEARCH_QUERY'
-
 
 def login():
     driver.get(config.get('Nikkei', 'LoginUrl'))
@@ -85,30 +74,11 @@ def login():
     login_button.click()
     time.sleep(1)
 
-# def enterKeyword():
-    # keywordbox=driver.find_element_by_xpath("//*[@id='SEARCH_QUERY']")
-    # keywordbox.send_keys("貿易")
-    # driver.find_element_by_name(el_search_txtbox)
-    # time.sleep(1)
-    # keywordbox.send_keys(Keys.RETURN)
-    #keywordbox.submit()
-    # time.sleep(1)
-    # driver.find_element_by_xpath("//*[@id='JSID_key_defaultsubmit']").submit()
-    # driver.find_element_by_name(el_search_txtbox).send_keys(Keys.RETURN)
-    # driver.execute_script("_nk.click(this,event,[['JSID_actFormSubmit']])")
-    # driver.find_element_by_class_name("l-miH02_H02e_formSubmit").click()
-    # driver.find_element_by_id("JSID_baseModalBackground")
-
-def search():
-
-    # サイト内で他の画面に遷移させたければ
-    keyword = '貿易'
+def search(keyword):
     try:
         driver.get(config.get('Nikkei', 'SearchUrl')+keyword)
     except:
         messagebox.showerror('URLエラー', '検索用URLが不正です。')
-    # time.sleep(3)
-    # enterKeyword()
     time.sleep(1)
 
 def getDataSource(pages):
@@ -117,34 +87,39 @@ def getDataSource(pages):
     while count <=pages:
         try:
             driver.find_element_by_xpath("/html/body/div[3]/main/div/div[5]/div/div[2]/button").click()
-            count += 10
-            time.sleep(2)
+            count += 1
+            time.sleep(1)
         except:
             break
 
     page_source = driver.page_source
     soup = BeautifulSoup(page_source, 'html.parser')
     headlines = soup.find_all("h3")
-    subtexts = soup.find_all("a", class_="nui-card__excerpt")
-    # subtexts = soup.find_all("div", class_="nui-card__sub-text")
-    # subtexts2 = subtexts.find_all("mark", class_="search__highlight")
-    # for headline in headlines:
     global df
     for i, headline in enumerate(headlines):
         title = headline.find("a")
-        # print(subtexts[i].get_text())
-        # subtext = subtexts[i].text + subtexts[i].find()
-        # subtext = subtexts[i].find("mark", class_="search__highlight")
-        # df_row = pd.Series([title.text, subtexts[i].get_text() + subtext.text + subtexts[i].next_sibling.strip()], index=df.columns )
-        df_row = pd.Series([title.text, subtexts[i].get_text() ], index=df.columns )
-
+        url = title.get('href')
+        print(url)
+        df_row = pd.Series([title.text.strip(), getArticleDetail(url), datetime.datetime.today()],
+                           index=df.columns)
         df = df.append(df_row, ignore_index=True )
     print(df)
-    df.to_csv('/Users/nikix/Desktop/a.csv')
+    df.to_csv(config.get('CSV', 'OutputPath'))
 
+
+def getArticleDetail(url):
+    driver.get(url)
+    time.sleep(1)
+    temp_page_source = driver.page_source
+    temp_soup = BeautifulSoup(temp_page_source, 'html.parser')
+    article_str=''
+    article_set = temp_soup.select(".cmn-article_text.a-cf.JSID_key_fonttxt.m-streamer_medium p")
+    for article in article_set:
+        article_str = article_str + article.text
+    return article_str
 
 if __name__ == '__main__':
     setDefault()
     setElementId()
-    search()
-    getDataSource(10)
+    search('貿易')#検索ワード
+    getDataSource(3)#もっと見るをクリックする回数
