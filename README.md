@@ -1,0 +1,3 @@
+# NikkeiScr
+
+Chrome Canaryをインストールしておくこと。
