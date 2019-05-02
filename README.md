@@ -1,6 +1,6 @@
 # NikkeiScr
 <br>
-※以下必須<br>
+
 ◾️環境<br>
 ・エディタ:Pycharm<br>
 ・言語：python3.7<br>
